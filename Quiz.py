@@ -38,13 +38,90 @@ while (ch =='y'):
         c2 = c2+1
     else:
         c3 = c3+1
+    print("Someone gives you a plant. Your first thought is…")
+    print("1. Can I propagate it?")
+    print("2. Cute! Where will it look best?")
+    print("3. Please don't die because of me 😭")
+    op = int (input("Enter your choice"))
+    if(op == 1):
+        c1 = c1+1
+    elif (op == 2):
+        c2 = c2+1
+    else:
+        c3 = c3+1
+    print("Pick a compliment:")
+    print("1. You always seem to be growing.")
+    print("2. You're effortlessly cool")
+    print("3. You're mysterious")
+    op = int (input("Enter your choice"))
+    if(op == 1):
+        c1 = c1+1
+    elif (op == 2):
+        c2 = c2+1
+    else:
+        c3 = c3+1
+    print("Pick your ideal rainy-day activity:")
+    print("1. Hot drink + window watching")
+    print("2. Reading under a blanket")
+    print("3. Going outside anyway")
+    op = int (input("Enter your choice"))
+    if(op == 1):
+        c1 = c1+1
+    elif (op == 2):
+        c2 = c2+1
+    else:
+        c3 = c3+1
+    print("You discover a tiny door at the bottom of a tree. What do you do?")
+    print("1. Open it immediately")
+    print("2. Assume fairies live there")
+    print("3. Absolutely NOT")
+    op = int (input("Enter your choice"))
+    if(op == 1):
+        c1 = c1+1
+    elif (op == 2):
+        c2 = c2+1
+    else:
+        c3 = c3+1
+    print("Pick a magical companion:")
+    print("1. A tiny glowing butterflye")
+    print("2. A grumpy frog")
+    print("3. A chaotic fairy")
+    op = int (input("Enter your choice"))
+    if(op == 1):
+        c1 = c1+1
+    elif (op == 2):
+        c2 = c2+1
+    else:
+        c3 = c3+1
+    print("If you were a tiny creature living in someone's garden, you'd be…")
+    print("1. A fairy")
+    print("2. A tiny mushroom that may or may not be magical")
+    print("3. A butterfly")
+    op = int (input("Enter your choice"))
+    if(op == 1):
+        c1 = c1+1
+    elif (op == 2):
+        c2 = c2+1
+    else:
+        c3 = c3+1
+    print("You receive a package with no return address. Inside is…")
+    print("1. A pressed flower")
+    print("2. A tiny mirror")
+    print("3. A tiny key")
+    op = int (input("Enter your choice"))
+    if(op == 1):
+        c1 = c1+1
+    elif (op == 2):
+        c2 = c2+1
+    else:
+        c3 = c3+1
     ch = 'n'
 
 if (c1>c2 and c1>c3):
-    print("Congratulations! you are a snake plant")
+    print("Congratulations! you are a Pothos")
 if (c2>c1 and c2>c3):
     print("Congratulations! you are a jade")
 if (c3>c2 and c3>c1):
-    print("Congratulations! you are a pothos")
+    print("Congratulations! you are a Peace Lily")
 
 

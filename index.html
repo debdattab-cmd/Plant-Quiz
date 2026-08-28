@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Quiz!</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <main class="wrap">
+    <header class="quiz-header">
+      <span class="eyebrow">Plant Quiz!</span>
+      <h1>What kind of plant are you?</h1>
+      <p>Answer honestly. There are no wrong choices.</p>
+    </header>
+  
+    <!--<div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>!-->
+
+
+    {% for question in questions %}
+      <div class="question" data-question-id="{{ question.id }}">
+        <p>{{ question.text }}</p>
+          <div class="options-row">
+          {% for option in question.options %}
+            <button
+              class="option-btn"
+              data-question-id="{{ question.id }}"
+              data-tag="{{ option.tag }}"
+            >{{ option.label }}</button>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  
+
+    <button id="submitBtn">Click to find your plant type!</button>
+
+    <p id="resultText"></p>
+    <!--<div class="result-overlay" id="resultOverlay" hidden>
+      <div class="result-card">
+        <div class="result-emoji" id="resultEmoji"></div>
+        <h2 id="resultTitle"></h2>
+        <p id="resultDescription"></p>
+        <button type="button" id="retakeBtn" class="btn-submit">Take it again</button>
+      </div>
+    </div>!-->
+  </main>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+  
+</body>
+</html>

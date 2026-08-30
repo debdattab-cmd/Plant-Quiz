@@ -18,37 +18,38 @@
       <div class="progress-fill" id="progressFill"></div>
     </div>!-->
 
-
     {% for question in questions %}
-      <div class="question" data-question-id="{{ question.id }}">
+      <section class="question" data-question-id="{{ question.id }}">
         <p>{{ question.text }}</p>
           <div class="options-row">
-          {% for option in question.options %}
-            <button
-              class="option-btn"
-              data-question-id="{{ question.id }}"
-              data-tag="{{ option.tag }}"
-            >{{ option.label }}</button>
-          {% endfor %}
-        </div>
-      </div>
+            {% for option in question.options %}
+              <button
+                class="option-btn"
+                data-question-id="{{ question.id }}"
+                data-tag="{{ option.tag }}"
+              >{{ option.label }}</button> 
+            {% endfor %}
+          </div>
+      </section>
     {% endfor %}
   
-
     <button id="submitBtn">Click to find your plant type!</button>
 
     <p id="resultText"></p>
-    <!--<div class="result-overlay" id="resultOverlay" hidden>
+    <p id="resultTitle"></p>
+    <p id="resultDescription"></p>
+    <div class="result-overlay" id="resultOverlay" hidden>
       <div class="result-card">
         <div class="result-emoji" id="resultEmoji"></div>
         <h2 id="resultTitle"></h2>
         <p id="resultDescription"></p>
-        <button type="button" id="retakeBtn" class="btn-submit">Take it again</button>
+        
       </div>
-    </div>!-->
+    </div>
+    
   </main>
 
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
   
 </body>
 </html>

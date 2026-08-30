@@ -24,7 +24,7 @@ optionButtons.forEach((btn) => {
 });
 
 // When "See result" is clicked, send all answers to Flask.
-document.getElementById('submitBtn').addEventListener('click', async () => {
+/*document.getElementById('submitBtn').addEventListener('click', async () => {
   const res = await fetch('/score', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -33,4 +33,22 @@ document.getElementById('submitBtn').addEventListener('click', async () => {
 
   const data = await res.json();
   document.getElementById('resultText').textContent = "Your result: " + data.result;
+});*/
+
+submitBtn.addEventListener('click', async () => {
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Calculating…';
+
+  const res = await fetch('/score', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(answers)
+  });
+  const data = await res.json();
+
+  document.getElementById('resultText').textContent = "Your result: " + data.emoji;
+  document.getElementById('resultTitle').textContent = data.title;
+  document.getElementById('resultDescription').textContent = data.description;
+  document.getElementById('resultOverlay').hidden = false;
 });
+

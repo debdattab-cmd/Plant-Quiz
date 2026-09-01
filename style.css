@@ -1,11 +1,11 @@
 :root {
-  --bg: rgb(95, 121, 71);
-  --card: #FFFFFF;
-  --ink: #31221d;
+  --bg: rgb(99, 132, 69);
+  --card: #b2d0aa;
+  --ink: #642e1c;
   --muted: #1f130f;
-  --coral: #4d2c1a;
+  --coral: #ab8875;
   --gold: #E8B84B;
-  --line: rgba(58, 46, 42, 0.10);
+  --line: rgba(237, 20, 190, 0.913);
   --font-display: 'Fraunces', serif;
   --font-body: 'Inter', sans-serif;
 }

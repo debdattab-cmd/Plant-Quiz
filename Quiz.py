@@ -100,19 +100,19 @@ results = {
     "Pothos": {
         "title":"Pothos",
         "emoji":"hehe",
-        "image": "pothos.gif"
+        "image": "pothos.gif",
         "description":"You are evergreesn, evergrowing and very adaptable, You can settle in any situation and make the best out of it!",
     },
     "Jade": {
         "title":"Jade",
         "emoji":"hehe",
-        "image": "jade.gif"
+        "image": "jade.gif",
         "description":"You are very strong, kind and very resilient. You are very independent and need almost little to no help to bloom into your best self",
     },
     "Peace Lily": {
         "title":"Peace Lily",
         "emoji":"hehe",
-        "image": "peacelily.gif"
+        "image": "peacelily.gif",
         "description":"You can be a bit dramatic at times but a little drama hurt no one! if given the right circumstances you can bloom very beautifully. You can also be very prortective of your loved ones and can go to any length to protect them.",
     }
 }

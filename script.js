@@ -46,9 +46,10 @@ submitBtn.addEventListener('click', async () => {
   });
   const data = await res.json();
 
-  document.getElementById('resultText').textContent = "Your result: " + data.emoji;
+
   document.getElementById('resultTitle').textContent = data.title;
+  document.getElementById('resultEmoji').textContent = data.emoji;
   document.getElementById('resultDescription').textContent = data.description;
-  document.getElementById('resultOverlay').hidden = false;
+  document.getElementById('resultOverlay').classList.add('show')
 });
 

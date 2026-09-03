@@ -1,11 +1,11 @@
 :root {
-  --bg: rgb(99, 132, 69);
-  --card: #b2d0aa;
-  --ink: #642e1c;
-  --muted: #1f130f;
-  --coral: #ab8875;
+  --bg: rgb(191, 226, 159);
+  --card: #f7edb4;
+  --ink: #d342cc;
+  --muted: #ff67ba;
+  --coral: #bb4f97;
   --gold: #E8B84B;
-  --line: rgba(237, 20, 190, 0.913);
+  --line: rgba(224, 113, 200, 0.913);
   --font-display: 'Fraunces', serif;
   --font-body: 'Inter', sans-serif;
 }
@@ -30,14 +30,15 @@ body {
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--coral);
+  color: #9b187f; /*var(--coral);*/
   font-weight: 600;
   display: block;
   margin-bottom: 10px;
 }
 
-h1 { font-family: var(--font-display); font-size: 32px; margin: 0 0 8px; }
+h1 { font-family: var(--font-display); font-size: 32px; margin: 0 0 8px; color: #186600 }
 h2 { font-family: var(--font-display); font-size: 19px; margin: 0 0 16px; }
+h3 { font-family: var(--font-display); color: #186600; margin: 0; }
 p { color: var(--muted); margin: 0; }
 
 .progress-track {
@@ -88,15 +89,16 @@ p { color: var(--muted); margin: 0; }
 .option-btn:hover { border-color: var(--coral); transform: translateX(2px); }
 .option-btn.selected {
   border-color: var(--coral);
-  background: rgba(232, 120, 90, 0.10);
+  background: rgb(240, 161, 236);
   font-weight: 600;
 }
 .option-btn:active { transform: scale(0.98); }
 
 /* Added by script.js when a button is clicked */
 .option-btn.selected {
-  background: #333;
-  color: white;
+  border-color: var(--coral);
+  background: rgb(240, 161, 236);
+  font-weight: 600;
 }
 
 #submitBtn {
@@ -104,8 +106,8 @@ p { color: var(--muted); margin: 0; }
   padding: 16px;
   border-radius: 14px;
   border: none;
-  background: var(--coral);
-  color: white;
+  background: rgb(221, 109, 193);;
+  color: rgb(3, 3, 3);
   font-family: var(--font-display);
   font-size: 17px;
   font-weight: 600;
@@ -121,11 +123,12 @@ p { color: var(--muted); margin: 0; }
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(58, 46, 42, 0.45);
+  background: rgb(250, 125, 223);
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 55px;
   z-index: 10;
+  color: white;
 }
 .result-overlay.show{
   display: flex;

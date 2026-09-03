@@ -52,4 +52,3 @@ submitBtn.addEventListener('click', async () => {
   document.getElementById('resultDescription').textContent = data.description;
   document.getElementById('resultOverlay').classList.add('show')
 });
-
